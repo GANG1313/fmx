@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="tt" width="30" height="30" rx="15" transform="translate(1300 25.328)" fill="#08c"/>
+    </clipPath>
+  </defs>
+  <g id="마스크_그룹_2" data-name="마스크 그룹 2" transform="translate(-1300 -25.328)" clip-path="url(#clip-path)">
+    <g id="free-icon-telegram-2111646" transform="translate(1300 25.328)">
+      <circle id="타원_34" data-name="타원 34" cx="15" cy="15" r="15" fill="#039be5"/>
+      <path id="패스_112" data-name="패스 112" d="M6.864,14.675,21.326,9.1c.671-.243,1.257.164,1.04,1.179h0l-2.462,11.6c-.182.823-.671,1.023-1.355.635L14.8,19.749l-1.809,1.742a.946.946,0,0,1-.756.369l.266-3.816,6.95-6.279c.3-.266-.068-.416-.466-.151L10.4,17.021l-3.7-1.155c-.8-.255-.821-.8.17-1.191Z" fill="#fff"/>
+    </g>
+  </g>
+</svg>

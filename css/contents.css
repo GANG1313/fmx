@@ -1,0 +1,606 @@
+@charset "utf-8";
+
+/* main 중앙컨텐츠 */
+.Sellside-Buyside-boards .boards-tabs {
+    display: flex;
+    flex-direction: column;
+	margin-bottom: 1.3rem;
+    padding-bottom: 1.3rem;
+    padding-top: 2rem;
+    border-bottom: 1px solid #B2B2B2;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.Sellside-Buyside-boards .boards-tabs ul {
+	display: flex;
+	gap: 45px;
+}
+
+.Sellside-Buyside-boards .boards-tabs ul li button {
+	color: #AAAAAA;
+	font-size: 24px;
+	font-weight: 800;
+}
+
+.Sellside-Buyside-boards .boards-tabs ul li.active button { 
+	color: #242424;
+	position: relative;
+}
+
+.Sellside-Buyside-boards .boards-tabs ul li.active button::before {
+	content: "";
+	width: 9px;
+	height: 9px;
+	border-radius: 50%;
+	background-color: #007DC4;
+	position: absolute;
+	top: -13px;
+	left: 0;
+}
+
+.Sellside-Buyside-boards .boards-tabs .link-board-tab {
+	color: #7E7E7E;
+}
+
+.Sellside-Buyside-boards .board-content-new {
+    border-radius: 1rem;
+	background-color: #F6F6F6;
+	padding: 1.5rem;
+	display: block;
+}
+
+.Sellside-Buyside-boards .board-content-new .content-new-desc {
+	font-size: 14px;
+	color: #747474;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+	margin-top: 13px;
+}
+
+.Sellside-Buyside-boards .board-content-new .content-new-info,
+.Sellside-Buyside-boards .boards-contents .wrap-board-contents ul li .board-list-info {
+	color: #747474;
+	font-size: 12px;
+}
+
+.Sellside-Buyside-boards .boards-contents {
+	border-bottom: 1px solid #B2B2B2;
+	padding: 0 1.5rem 0.8rem;
+}
+
+.Sellside-Buyside-boards .boards-contents .wrap-board-contents ul li {
+	padding-top: 0.8rem;
+}
+
+.Sellside-Buyside-boards .boards-contents .wrap-board-contents ul li a {
+	display: flex;
+    justify-content: space-between;
+}
+
+.Sellside-Buyside-boards .boards-contents .wrap-board-contents ul li .board-list-title {
+	font-size: 14px;
+}
+
+.boards-contents-wrap {
+	display: none;
+}
+
+.boards-contents-wrap.active {
+	display: block;
+}
+
+.monthly-slider-container {
+	position: relative;
+	width: 100%;
+	margin: 0 auto 50px;
+}
+
+.monthly-slider-container .cont_top_tit {
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+}
+
+.monthly-slider-controls {
+	margin-top: 10px;
+	text-align: center;
+}
+
+.monthly-slider-controls .btn-prev {
+	background: url(../images/main/monthly-btn-prev.svg) no-repeat;
+}
+
+.monthly-slider-controls .btn-next {
+	background: url(../images/main/monthly-btn-next.svg) no-repeat;
+}
+
+.monthly-slider-controls .btn-pause {
+	background: url(../images/main/monthly-btn-pause.svg) no-repeat;
+}
+
+.monthly-slider-controls .btn-play {
+	background: url(../images/main/monthly-btn-play.svg) no-repeat;
+}
+
+/* 버튼 비활성화 시 숨김 처리 */
+.monthly-slider-controls .btn-play:not(.active),
+.monthly-slider-controls .btn-pause:not(.active) {
+  display: none;
+}
+
+/* 활성화된 버튼만 표시 */
+.monthly-slider-controls .btn-play.active,
+.monthly-slider-controls .btn-pause.active {
+  display: inline-block;
+}
+
+.monthly-slide-item {
+	padding-top: 13px;
+	font-size: 14px;
+}
+
+.monthly-slide-item img {
+	width: 162px;
+	height: auto;
+	display: block;
+	border-radius: 5px;
+}
+
+.monthly-slide-item span {
+	display: block;
+	margin-top: 10px;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.frequently-visited ul {
+	justify-content: space-between;
+    align-items: center;
+}
+
+.frequently-visited ul li .icon_img {
+	background-color: #fff;
+	box-shadow: 1px 1px 8px 0px rgba(99, 99, 99, 0.3);
+	border-radius: 50%;
+	padding: 18px;
+	display: flex;
+	justify-content: center;
+	width: 76px;
+	height: 76px;
+}
+
+.frequently-visited ul li a {
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+	gap: 13px;
+}
+
+.frequently-visited ul li span {
+	text-align: center;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.youtube-cont-tit {
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+	padding-bottom: 1.3em;
+}
+
+.youtube-cont-tit h3 {
+	font-size: 20px;
+}
+
+.youtube-cont-video {
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+	gap: 17px;
+}
+
+.youtube-cont-video li a {
+	display: flex;
+	flex-direction: column;
+}
+
+.youtube-cont-video li a span {
+	font-size: 14px;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.news-tabs-container,
+.column-tabs-container {
+	display: flex;
+	align-items: center;
+    justify-content: space-between;
+	list-style: none;
+	padding: 0;
+	margin: 0 0 10px;
+	border-bottom: 1px solid #B2B2B2;
+}
+
+.news-tabs-container .tabs,
+.column-tabs-container .tabs {
+	display: flex;
+	gap: 50px;
+}
+
+.column-tabs-container .tabs {
+	margin-right: -3px !important;
+}
+
+.news-tabs-container .tab,
+.column-tabs-container .tab {
+	text-align: center;
+	padding: 19px 0 10px 0;
+	cursor: pointer;
+	border-bottom: 1px solid transparent;
+	transition: all 0.3s ease;
+	color: #9D9D9D;
+	font-size: 18px;
+}
+
+.news-tabs-container .tab:hover,
+.column-tabs-container .tab:hover {
+	font-weight: bold;
+	color: #1D1D1D;
+}
+
+.link-board-more,
+.link-column-more {
+	background: url(../images/main/main_more.png) no-repeat;
+	width: 16px;
+	height: 16px;
+}
+
+.news-tabs-container .tab.active,
+.column-tabs-container .tab.active {
+	font-weight: bold;
+	color: #1D1D1D;
+    transition: 0.3s;
+	position: relative;
+}
+
+.news-tabs-container .tab.active::after,
+.column-tabs-container .tab.active::after {
+	width: 100%;
+    height: 3px;
+    background-color: #007DC4;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    content: "";
+    transform: scaleX(1);
+    transition: 0.3s;
+}
+
+.news-tabs-container.tab-content-container,
+.column-tabs-container.tab-content-container {
+	margin: 10px 0;
+}
+
+.news-tab-contentr .tab-content,
+.column-tab-contentr .tab-content {
+	display: none;
+}
+
+.news-tab-contentr .tab-content.active,
+.column-tab-contentr .tab-content.active {
+	display: block;
+}
+
+.news-tab-contentr .slider,
+.column-tab-contentr .slider {
+	padding: 0 40px;
+}
+
+.news-tab-contentr .slider .slide,
+.column-tab-contentr .slider .slide {
+	text-align: left;
+	padding: 34px 0 34px 0;
+	margin: 0 30px !important; /* 슬라이드 간 간격 */
+	width: 260px;
+}
+
+.news-tab-contentr .slider .slide span,
+.column-tab-contentr .slider .slide span {
+	background-color: #1D1D1D;
+	color: #fff;
+	font-size: 14px;
+	padding: 5px 12px;
+	border-radius: 13px;
+}
+
+.news-tab-contentr .slider .slide .newsTit,
+.column-tab-contentr .slider .slide .columnTit {
+	font-size: 19px;
+	font-weight: 800;
+	margin: 14px 0 19px;
+}
+
+.news-tab-contentr .slider .slide p,
+.column-tab-contentr .slider .slide p {
+	font-size: 15px;
+	color: #646464;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.news-tab-contentr .tab-content .slick-prev,
+.column-tab-contentr .tab-content .slick-prev {
+	left: 0 !important;
+}
+
+.news-tab-contentr .tab-content .slick-next,
+.column-tab-contentr .tab-content .slick-next {
+	right: 0 !important;
+}
+
+.news-tab-contentr .tab-content .slick-prev::before,
+.column-tab-contentr .tab-content .slick-prev::before {
+	background: url(../images/main/icon-sw_arrow-left.png) no-repeat center !important;
+	color: transparent;
+}
+
+.news-tab-contentr .tab-content .slick-next::before,
+.column-tab-contentr .tab-content .slick-next::before {
+	background: url(../images/main/icon-sw_arrow-right.png) no-repeat center !important;
+	color: transparent;
+}
+
+.news-tab-contentr .tab-content .slick-prev,
+.news-tab-contentr .tab-content .slick-next,
+.column-tab-contentr .tab-content .slick-next,
+.column-tab-contentr .tab-content .slick-prev {
+    display: block;
+    width: 37px !important;
+	height: 37px !important;
+	box-shadow: 1px 1px 8px 0px rgba(99, 99, 99, 0.2);
+	border-radius: 50%;
+}
+
+.finish-video>div {
+	align-items: center;
+	margin-bottom: 30px;
+	gap: 7px;
+}
+
+.youtube_name {
+	font-size: 20px;
+	font-weight: 800;
+}
+
+.wrap-video img {
+	width: 100%;
+	position: relative;
+}
+
+.wrap-video a {
+	position: relative;
+	display: block;
+}
+
+.video_play_btn {
+	background: url(../images/main/video_play_btn.svg) no-repeat;
+	width: 120px;
+	height: 120px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.posts {
+	font-size: 13px;
+	color: #646464;
+}
+
+.finish-video .wrap-video .followUs {
+	background-color: #CC0000;
+	border-radius: 3px;
+	width: 100%;
+	padding: 14px 0;
+	margin-top: 30px;
+	transition: all 0.5s;
+}
+
+.finish-video .wrap-video .followUs:hover {
+	background-color: #990000;
+}
+
+@media (max-width: 1350px) {
+
+	.center-content {
+		min-width: 100%;
+	}
+
+	.main-container {
+		margin: 0;
+	}
+
+	.SellBuyBtn {
+		width: 100%;
+		padding-top: 20px;
+	}
+
+	.SellBuyBtn ul {
+		display: flex;
+		gap: 10px;
+		justify-content: space-between;
+	}
+
+	.counsel_form {
+		background: url(../images/common/counsel_bg.svg) no-repeat center / cover;
+		margin-bottom: 10px;
+	}
+
+	.topmenu {
+		display: none;
+	}
+
+	.topHeader .wrap-header-top-right {
+		display: none;
+	}
+
+	.header .m_open_btn  {
+		display: block;
+	}
+
+	.rankingBox .tabs,
+	.recentlyViewed-tabs, 
+	.interest-tabs {
+		width: 100%;
+	}
+
+
+}
+
+@media (max-width: 768px) {
+	.main-container {
+		flex-direction: column;
+	}
+
+	.left-content,
+	.right-content,
+	.center-content {
+		flex: 1;
+		margin-bottom: 20px;
+	}
+
+	.menu-toggle {
+		display: block;
+		background: transparent;
+		border: none;
+		font-size: 1.5rem;
+		color: white;
+		cursor: pointer;
+	}
+
+	.navbar .menu {
+		display: none;
+		flex-direction: column;
+		background: #0056b3;
+		position: absolute;
+		top: 50px;
+		right: 0;
+		width: 200px;
+		padding: 10px;
+	}
+
+	.menu.show {
+		display: flex;
+	}
+
+	.SellBuyBtn ul {
+		flex-wrap: wrap;
+	}
+
+	.SellBuyBtn ul li {
+		width: 48%;
+	}
+
+	.counsel_form h3 {
+		font-size: 20px;
+	}
+
+	.Sellside-Buyside-boards .boards-tabs ul li button,
+	.cont_top_tit h2 {
+		font-size: 20px !important;
+	}
+
+	.Sellside-Buyside-boards .boards-tabs ul {
+		gap: 20px !important;
+	}
+
+	.Sellside-Buyside-boards .board-content-new,
+	.Sellside-Buyside-boards .boards-contents {
+		padding: 1rem !important;
+	}
+
+	.news-tabs-container .tabs, .column-tabs-container .tabs {
+		display: flex;
+		gap: 0 20px !important;
+		flex-wrap: wrap;
+	}
+
+	.news-tabs-container .tab, .column-tabs-container .tab {
+		font-size: 16px !important;
+	}
+
+	.youtube-cont-video {
+		flex-wrap: wrap;
+		gap: 10px 0;
+	}
+
+	.youtube-cont-video li {
+        width: 24%;
+    }
+
+	.finish-video .wrap-video .followUs {
+		margin-top: 10px;
+		font-size: 14px;
+	}
+
+	.youtube_name {
+		font-size: 18px;
+	} 
+
+	.finish-video>div {
+		margin-bottom: 20px;
+	}
+	
+}
+
+@media (max-width: 600px) {
+	.frequently-visited ul {
+		flex-wrap: wrap;
+		gap: 10px 0;
+	}
+
+	.frequently-visited ul li {
+		width: 33.3333%;
+	}
+
+	.news-tabs-container, .column-tabs-container {
+		border-bottom: 0 !important;
+	}
+
+	.link-board-more, .link-column-more {
+		width: 24px !important;
+	}
+
+	.youtube-cont-video li {
+        width: 47%;
+    }
+}
+
+@media (max-width: 500px) {
+	.SellBuyBtn ul li {
+		width: 100%;
+		margin-bottom: 0;
+	}
+
+	.monthly-slide-item img {
+		width: 150px !important;
+	}
+
+	.news-tab-contentr .slider .slide, .column-tab-contentr .slider .slide {
+	}
+
+}
+
+

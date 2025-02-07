@@ -1,0 +1,1090 @@
+@charset "utf-8";
+
+/* paging */
+
+
+.pagination {
+  margin: 25px 0;
+  text-align: center;
+}
+
+.pagination a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: #222;
+  font-size: 16px;
+  margin: 5px 0 5px 10px;
+  text-align: center;
+  vertical-align: middle;
+  transition: all 0.3s ease;
+}
+
+.pagination a.active {
+  background: #183368;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.pagination .d_prev {
+  display: inline-block;
+  background: url(../images/paging_pprev.png)no-repeat center;
+  padding: 0;
+  cursor: pointer;
+  text-indent: 100px;
+  overflow: hidden;
+  transition: 0.3s all ease
+}
+
+.pagination .d_prev:hover {
+  box-shadow: 0 0 5px 1px #bbb;
+}
+
+.pagination .prev {
+  display: inline-block;
+  background: url(../images/paging_prev.png)no-repeat center;
+  padding: 0;
+  cursor: pointer;
+  text-indent: 100px;
+  overflow: hidden;
+  transition: 0.3s all ease
+}
+
+.pagination .prev:hover {
+  box-shadow: 0 0 5px 1px #bbb;
+}
+
+.pagination .d_next {
+  display: inline-block;
+  background: url(../images/paging_nnext.png)no-repeat center;
+  padding: 0;
+  cursor: pointer;
+  text-indent: 100px;
+  overflow: hidden;
+  transition: 0.3s all ease
+}
+
+.pagination .d_next:hover {
+  box-shadow: 0 0 5px 1px #bbb;
+}
+
+.pagination .next {
+ display: inline-block;
+  background: url(../images/paging_next.png)no-repeat center;
+  padding: 0;
+  cursor: pointer;
+  text-indent: 100px;
+  overflow: hidden;
+  transition: 0.3s all ease
+}
+
+.pagination .next:hover {
+  box-shadow: 0 0 5px 1px #bbb;
+}
+
+.pagination.border-top {
+  border-top: 1px solid #222;
+  padding: 25px 0 0
+}
+
+/* table */
+
+.table_normal caption {
+  position: absolute;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.tableScroll {
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+.table_normal {
+  width: 100%;
+  margin: 10px 0 0;
+  border-top: 1px solid #666;
+  border-spacing: 0;
+  border-collapse: collapse;
+  line-height: 1.3;
+  border: none;
+}
+ 
+.table_normal {
+  border-top: 2px solid #111111;
+}
+
+.table_normal thead tr th {
+  padding: 25px 15px;
+  background-color: #fff;
+  border-bottom: 1px solid #d7d7d7;
+  color: #222;
+  font-size: 16px;
+  text-align: center;
+}
+
+.table_normal tbody tr td {
+  /* background-color: white; */
+  text-align: center;
+  border-bottom: 1px solid #CCCCCC;
+  padding: 23px 15px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.table_normal tbody tr .al {
+  text-align: left;
+  font-weight: 600;
+}
+
+.table_normal tbody tr:hover td {
+  background: #f7f7f7;
+}
+
+.table_normal tbody tr.notice td {
+  background-color: #f4f4f4;
+}
+
+.table_normal tbody tr.notice td:first-child {
+  padding: 0 25px;
+}
+
+.table_normal tbody tr.notice td:first-child p{
+  color: #fff;
+  font-weight: 500;
+  background-color: #183368;
+  border-radius: 50px;
+  padding: 7px 18px;
+  font-size: 16px;
+  display: inline-block;
+}
+
+.table_normal tbody tr td button {
+  margin: 2px 0
+}
+
+.table_normal tbody tr td .iconBox {
+  position: relative;
+  display: block;
+}
+
+.table_normal tbody tr td .linkBox {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.table_normal tbody tr td .linkBox>a {
+  vertical-align: middle;
+  margin: 0 5px 0 0;
+  color: #222;
+  word-break: break-all;
+  cursor: pointer;
+}
+
+.table_normal tbody tr td .linkBox>a:hover {
+  text-decoration: underline;
+  color: #1464d9;
+}
+
+.table_normal tbody tr td .linkBox>a:hover .txt {
+  color: #1464d9
+}
+
+.table_normal tbody tr td .linkBox>a>.ellipsis {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: calc(100% - 70px);
+}
+
+.table_normal tbody tr td .linkBox.arrow>a .txt {
+  color: #1464d9;
+  vertical-align: middle
+}
+
+.table_normal tbody tr td .linkBox .txt {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: calc(100% - 70px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.table_normal tbody tr td .mobBox {
+  display: none
+}
+
+.table_normal tbody tr td.no_dataBox {
+  background: #f5f7f9;
+  padding: 60px 15px;
+  font-size: 18px;
+  color: #222;
+}
+
+.table_normal tbody tr td.no_dataBox .txt {
+  margin: 25px 0 0;
+  line-height: 1
+}
+
+.table_normal tbody tr td .txt {
+  color: #222;
+  line-height: 1.2;
+  vertical-align: middle;
+}
+
+.table_normal tbody tr td .txt_default {
+  margin: 10px 0
+}
+
+.table_normal tbody tr td .num {
+  font-size: 20px;
+}
+
+.table_normal.type02 tbody tr td {
+  color: #222
+}
+
+.main-notice {
+  margin-top: 0;
+}
+
+.main-notice tbody tr td {
+  padding: 20px 15px;
+}
+
+.main-notice tbody tr td.mobH {
+  color: #666;
+  white-space: nowrap;
+}
+
+.main-notice tbody tr:hover td {
+  background: transparent;
+}
+
+.main-notice tbody tr td:first-child {
+  background-color: #fff!important;
+}
+
+
+/* label_title */
+
+.label_title {
+  display: table;
+  width: 100%;
+  min-width: 250px;
+  table-layout: fixed;
+  padding: 3px 0;
+}
+
+.label_title .label_titleL {
+  display: table-cell;
+  width: 38px;
+  padding: 2px 10px 0 0;
+  vertical-align: middle;
+}
+
+.label_title .label_titleR {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.label_title .label_titleR .label_titleLink {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  padding: 3px 0;
+}
+
+.label_title .label_titleR .label_titleLink .cnt {
+  float: left;
+  position: relative;
+  top: 2px;
+  margin: 0 0 0 2px;
+  color: #2a80dd;
+}
+
+.label_title .label_titleR .txt {
+  position: relative;
+  float: left;
+  display: inline-block;
+  max-width: 100%;
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  padding: 3px 0;
+  transition: 0.5s all ease;
+  cursor: pointer;
+}
+
+.label_title .label_titleR .main-nt-tx {
+  font-size: 18px;
+}
+
+.label_title .label_titleR .label_titleLink:hover .txt {
+  color: #183368;
+}
+
+
+.text-red {
+  color: #183368;
+}
+
+.label_title .label_titleR .txt:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  transition: width .5s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+  background: #183368;
+}
+
+.label_title .label_titleR .label_titleLink:hover .txt:after {
+  width: 100%;
+  left: 0;
+}
+
+.label_title .label_titleLinkIn {
+  display: block;
+}
+
+.label_title.icon .label_titleLinkIn {
+  margin: 0 68px 0 0
+}
+
+.label_title.comment .label_titleLinkIn {
+  margin: 0 40px 0 0
+}
+
+.label_title.comment.icon .label_titleLinkIn {
+  margin: 0 65px 0 0
+}
+
+/* search */
+
+.table_top {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0 0 5px;
+}
+
+.searchBox {
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  max-width: 400px;
+  text-align: center;
+}
+
+.searchBox .listBox {
+  top: 0;
+  width: 500px;
+}
+
+.searchBox .selectBox {
+  width: 100%;
+}
+
+.searchBox .selectBox label {
+  height: 60px;
+  line-height: 54px;
+  border: 3px solid #a4a4a4;
+  font-size: 18px
+}
+
+.searchBox .selectBox label:after {
+  top: 23px;
+  right: 17px;
+  display: inline-block;
+  width: 19px;
+  height: 10px;
+  vertical-align: middle;
+  background: url("../../../images/template9/resp/blue/icon/icon_searchBox_arrow.png") no-repeat;
+}
+
+.searchBox .selectBox select {
+  line-height: 16px;
+  border: none;
+  width: 100%;
+  padding: 20px 15px;
+  color: #767676;
+  background: #f4f4f4 url(../img/board_select.png)no-repeat right 20px top 24px;
+  flex: 20% 0 0;
+  border-radius: 50px;
+}
+
+.searchBox .textBoxIn {
+  border-image-slice: 1;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.searchBox .textBoxIn .inputBox {
+  display: flex;
+  width: 100%;
+}
+
+.searchBox .textBoxIn .inputBox input {
+  border-radius: 0;
+  width: 100%;
+  padding: 20px 15px;
+  height: 50px;
+  font-size: 16px;
+  border: 0;
+  padding: 0 0 0 20px;
+  color: #767676;
+  border-radius: 50px 0 0 50px;
+  background-color: #ffffff;
+}
+
+.searchBox .textBoxIn .inputBox input::placeholder {
+  color: #767676;
+  font-size: 16px;
+}
+
+.searchBox .textBoxIn button {
+  top: 0;
+  right: 0;
+  width: 54px;
+  height: 50px;
+  padding: 0;
+  cursor: pointer;
+  background: #f4f4f4;
+  border-radius: 0;
+  text-indent: -9999px;
+  background: url(../images/searchico.png)no-repeat center;
+  border-left: 1px solid #ccc;
+}
+
+.searchBox.none {
+  position: relative;
+  margin: 40px 0;
+  padding: 0 300px;
+}
+
+.searchBox.none .textBox {
+  position: relative;
+  margin: 0
+}
+
+.searchBox.type02 {
+  position: relative;
+  margin: 40px 0;
+  padding: 0 45px;
+}
+
+.searchBox.type02 .selectList {
+  position: absolute;
+  top: 0;
+  width: 510px;
+  height: 60px;
+  z-index: 2;
+  display: table;
+  table-layout: fixed;
+}
+
+.searchBox.type02 .selectList>li {
+  position: relative;
+  display: table-cell;
+  width: 100%;
+  padding: 0 10px 0 0;
+}
+
+.searchBox.type02 .textBox {
+  margin: 0 0 0 510px;
+}
+
+.searchBox.type02 .textBoxIn .inputBox {
+  display: block;
+  margin: 0 76px 0 0
+}
+
+.icon_search {
+  display: inline-block;
+  width: 21px;
+  height: 20px;
+  vertical-align:middle;
+  background: url(../img/board_Srh.png)no-repeat;
+}
+.blind {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0); 
+  width: 1px; 
+  height: 1px; 
+  margin: -1px;
+}
+
+.floatBox .countBox {
+  font-size:16px;
+  color: #666;
+}
+.floatBox .countBox strong {
+  font-weight:600;
+  color: #a8070d;
+}
+
+.writing_btn {
+  padding: 15.5px 29px;
+  border-radius: 5px;
+  background: #183368;
+  color: #fff;
+  font-size: 16px;
+}
+
+/* ============================
+                Mobile Responsiveness
+   ============================*/
+
+
+
+/* mobile */
+
+@media only all and (max-width:1000px) {
+  /* Common */
+
+  .mobH {
+    display: none
+  }
+
+  .mobS {
+    display: block
+  }
+
+  .dismobS {
+    display: inline-block
+  }
+
+  .t_mobS {
+    display: block
+  }
+
+  tr.mobS {
+    display: table-row
+  }
+
+  .img_area img.mobS {
+    display: inline-block
+  }
+
+  .mobBr {
+    display: block
+  }
+
+  /* search */
+
+  .searchBox,
+  .searchBox.none,
+  .searchBox.type02 {
+    margin: 0;
+    padding: 0
+  }
+
+  .searchBox .listBox {
+    width: 300px;
+  }
+
+  .searchBox .selectBox label {
+    height: 50px;
+    line-height: 44px;
+    font-size: 16px
+  }
+
+  .searchBox .selectBox label:after {
+    top: 17px;
+    right: 12px
+  }
+
+  .searchBox .textBoxIn .inputBox input {
+    font-size: 16px;
+    padding: 0 0 0 10px
+  }
+
+  .searchBox .textBoxIn button {
+    width: 44px;
+  }
+
+  .searchBox.none .textBox:after {
+    left: -30px;
+    right: -30px
+  }
+
+  .searchBox.type02:after {
+    display: none
+  }
+
+  .searchBox.type02 .selectList>li {
+    padding: 0
+  }
+
+  .searchBox.type02 .listBox {
+    position: relative;
+    width: auto;
+    height: 50px;
+    margin: 0 0 0 5px
+  }
+
+  .searchBox.type02 .selectList li:first-child .listBox {
+    margin: 0 5px 0 0
+  }
+
+  .searchBox.type02 .selectBox label {
+    height: 50px;
+    line-height: 46px
+  }
+
+  .searchBox.type02 .selectBox label span {
+    margin: 0 40px 0 15px;
+  }
+
+  .searchBox.type02 .selectBox label:after {
+    top: 20px;
+    right: 15px
+  }
+
+  .searchBox.type02 .selectList {
+    position: relative;
+    width: 100%;
+    height: 50px
+  }
+
+  .searchBox.type02 .textBox {
+    position: relative;
+    margin: 10px 0 0
+  }
+
+  .searchBox.type02 .textBoxIn {
+    height: 44px
+  }
+
+  .searchBox.type02 .textBoxIn .inputBox {
+    margin: 0 66px 0 0
+  }
+
+  .searchBox.type02 .textBoxIn .inputBox input {
+    height: 44px;
+    line-height: 44px;
+    font-size: 16px
+  }
+
+  .searchBox.type02 .textBoxIn button {
+    width: 44px;
+    height: 44px
+  }
+
+  /* EOD : search */
+
+  /* table */
+
+  .table_block caption {
+    display: none;
+  }
+  .table_normal tbody tr > td.mobH{
+    display:none;
+  }
+
+  .table_normal{
+    display:flex;  
+  }
+  
+  .table_normal tbody tr td .mobBox {
+    display: flex;
+  }
+  .label_title .label_titleR{
+    text-align:left;
+  }
+  .table_normal tbody tr td .mobBox li {
+    margin: 0 8px;
+    font-size: 13px;
+    color: #666;
+    min-height: 20px;
+    /* width: 71px; */
+    align-items: center;
+    display: flex;
+    text-align: center;
+  }
+
+  .table_normal tbody tr td .mobBox li:first-child {
+    margin-left: 0;
+    width: auto;
+  }
+
+  .table_normal tbody tr td .mobBox li:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -8px;
+    width: 1px;
+    height: 10px;
+    margin: -5px 0 0;
+    background-color: #d7d7d7;
+  }
+
+  .table_normal tbody tr td .mobBox li:first-child:before {
+    display: none
+  }
+
+  .table_normal tbody tr td .mobBox.Top {
+    font-size: 13px;
+    margin: 0
+  }
+
+  .table_normal tbody tr.detail td .mobBox {
+    margin: 8px 0 0 30px
+  }
+
+  .table_normal tbody tr td .mobbtnBox {
+    margin: 10px 0
+  }
+
+  .table_normal tbody tr td .mobbtnBox.Full button {
+    width: 100%;
+    padding: 0
+  }
+
+  .table_normal tbody tr td .mobBox .label_s_blue,
+  .table_normal tbody tr td .mobBox .label_s_gray,
+  .table_normal tbody tr td .mobBox .label_s_white {
+    padding: 0 4px;
+    font-size: 12px
+  }
+  .table_normal tbody tr td.no_dataBox {
+    display: block !important;
+    padding: 30px 15px !important;
+    text-align: center !important;
+  }
+
+  .table_normal tbody tr td.no_dataBox .txt {
+    font-size: 14px;
+    margin: 15px 0 0
+  }
+
+  .label_title .label_titleR .main-nt-tx {
+    font-size: 16px;
+  }
+
+  /* EOD : table */
+
+  /* paging */
+
+
+  .pagination {
+    margin: 25px 0 0;
+    text-align: center;
+  }
+
+  .pagination a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: #222;
+    font-size: 16px;
+    margin: 5px 0 5px 10px;
+    text-align: center;
+    vertical-align: middle;
+    transition: all 0.3s ease;
+  }
+
+  .pagination a {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin: 2px 0 2px 5px;
+    font-size: 14px
+  }
+
+  /* EOD : paging */
+
+
+}
+
+@media only all and (max-width:600px) {
+
+  .table_top {
+    align-items: center;
+  }
+
+  .table_normal tbody tr td{
+    display: block;
+  }
+
+  
+  .table_normal tbody tr td:first-child{
+    background:#eee;
+    padding: 18px 15px;
+  }
+
+  .app-pr-tb tbody tr td:first-child{
+    background:#fff;
+  }
+
+  .table_normal tbody tr.notice td:first-child {
+    padding: 16px 15px;
+  }
+
+  /* search */
+
+  .searchBox,
+  .searchBox.none,
+  .searchBox.type02 {
+    margin: 30px 0;
+    padding: 0;
+    display: block;
+  }
+
+  .searchBox .listBox {
+    width: 100%;
+  }
+  .searchBox .textBox{
+    margin:0;
+    
+  }
+  .searchBox .selectBox label {
+    height: 50px;
+    line-height: 44px;
+    font-size: 16px
+  }
+
+  .searchBox .selectBox label:after {
+    top: 17px;
+    right: 12px
+  }
+
+  .searchBox .textBoxIn .inputBox input {
+    font-size: 14px;
+    padding: 0 0 0 10px;
+    height: 40px;
+  }
+
+  .searchBox .textBoxIn button {
+    width: 44px;
+    height: 40px;
+  }
+
+  .writing_btn {
+    font-size: 12px;
+    padding: 12px 20px;
+}
+
+  .searchBox.none .textBox:after {
+    left: -30px;
+    right: -30px
+  }
+
+  .searchBox.type02:after {
+    display: none
+  }
+
+  .searchBox.type02 .selectList>li {
+    padding: 0
+  }
+
+  .searchBox.type02 .listBox {
+    position: relative;
+    width: auto;
+    height: 50px;
+    margin: 0 0 0 5px
+  }
+
+  .searchBox.type02 .selectList li:first-child .listBox {
+    margin: 0 5px 0 0
+  }
+
+  .searchBox.type02 .selectBox label {
+    height: 50px;
+    line-height: 46px
+  }
+
+  .searchBox.type02 .selectBox label span {
+    margin: 0 40px 0 15px;
+  }
+
+  .searchBox.type02 .selectBox label:after {
+    top: 20px;
+    right: 15px
+  }
+
+  .searchBox.type02 .selectList {
+    position: relative;
+    width: 100%;
+    height: 50px
+  }
+
+  .searchBox.type02 .textBox {
+    position: relative;
+    margin: 10px 0 0
+  }
+
+  .searchBox.type02 .textBoxIn {
+    height: 44px
+  }
+
+  .searchBox.type02 .textBoxIn .inputBox {
+    margin: 0 66px 0 0
+  }
+
+  .searchBox.type02 .textBoxIn .inputBox input {
+    height: 44px;
+    line-height: 44px;
+    font-size: 16px
+  }
+
+  .searchBox.type02 .textBoxIn button {
+    width: 44px;
+    height: 44px
+  }
+
+  /* EOD : search */
+
+  /* table */
+
+  .table_block caption {
+    display: none
+  }
+  .table_normal tbody tr > td.mobH{
+    display:none;
+  }
+
+  .table_normal tbody tr td .mobBox {
+    display: flex;
+  }
+
+  .table_normal tbody tr td .mobBox li {
+    margin: 0 8px;
+    font-size: 13px;
+    color: #666;
+    min-height: 20px;
+    /* width: 71px; */
+    align-items: center;
+    display: flex;
+    text-align: center;
+  }
+
+  .table_normal tbody tr td .mobBox li:first-child {
+    margin-left: 0
+  }
+
+  .table_normal tbody tr td .mobBox li:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -8px;
+    width: 1px;
+    height: 10px;
+    margin: -5px 0 0;
+    background-color: #d7d7d7;
+  }
+
+  .table_normal tbody tr td .mobBox li:first-child:before {
+    display: none
+  }
+
+  .table_normal tbody tr td .mobBox.Top {
+    font-size: 13px;
+    margin: 0
+  }
+
+  .table_normal tbody tr.detail td .mobBox {
+    margin: 8px 0 0 30px
+  }
+
+  .table_normal tbody tr td .mobbtnBox {
+    margin: 10px 0
+  }
+
+  .table_normal tbody tr td .mobbtnBox.Full button {
+    width: 100%;
+    padding: 0
+  }
+
+  .table_normal tbody tr td .mobBox .label_s_blue,
+  .table_normal tbody tr td .mobBox .label_s_gray,
+  .table_normal tbody tr td .mobBox .label_s_white {
+    padding: 0 4px;
+    font-size: 12px
+  }
+  .table_normal tbody tr td.no_dataBox {
+    display: block !important;
+    padding: 30px 15px !important;
+    text-align: center !important;
+  }
+
+  .table_normal tbody tr td.no_dataBox .txt {
+    font-size: 14px;
+    margin: 15px 0 0
+  }
+
+  .searchBox .textBoxIn .inputBox input::placeholder {
+    font-size: 14px;
+  }
+
+  .searchBox {
+    margin: 0;
+  }
+
+  /* EOD : table */
+
+  /* paging */
+
+
+  .pagination {
+    margin: 25px 0 0;
+    text-align: center;
+  }
+
+  .pagination a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: #222;
+    font-size: 16px;
+    margin: 5px 0 5px 10px;
+    text-align: center;
+    vertical-align: middle;
+    transition: all 0.3s ease;
+  }
+
+  .pagination a {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin: 2px 0 2px 5px;
+    font-size: 14px
+  }
+
+
+}
+
+@media only all and (max-width:375px) {
+  .table_top {
+    display: blocK;
+  }
+
+  .writing_btn {
+    float: right;
+    margin: 10px 0 10px;
+  }
+}
